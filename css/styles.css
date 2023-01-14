@@ -1,17 +1,91 @@
 :root {
 
 /* Font */
---header-font-
-
+--font-family-logo: 'Raleway', 'sans-serif';
 /* Text colors */
+--primary-brand-txt-cl: #4D5AE5;
+--body-txt-cl: #434455;
+--dark-txt-cl: #2E2F42;
+--light-txt-cl: #F4F4FD;
+--white-txt-cl: #FFFFFF;
 
 /* Background colors */
+--dark-bg-cl: #2E2F42;
+--light-bg-cl:  #F4F4FD;
+--primary-brand-btn-bg-cl: #4D5AE5;
 
 /* Others */
-;
+--light-btn-bg-color: #F4F4FD;
+--pressed-btn-state-bg: #404BBF;
+--active-link-txt: #404BBF;
 }
 
 
 body {
-    font-family: 'Roboto', 'sans-serif'; 
+font-family: 'Roboto', 'sans-serif'; 
+
+color: var(--body-txt-cl);
+}
+
+/* ----- buttons ----- */
+.btn:hover,
+.btn:focus {
+    color: var(--white-txt-cl);
+  background-color: var(--pressed-btn-state-bg) ;
+}
+
+.btn {
+    cursor: pointer;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.hero-btn {
+color: var(--white-txt-cl);
+background-color: var(--primary-brand-btn-bg-cl);
+}
+
+.portfolio-btn {
+color: var(--primary-brand-txt-cl);
+background-color: var(--light-btn-bg-color);
+}
+
+/* !!!!!  .current */
+
+.link:hover,
+.link:focus {
+color: var(--active-link-txt);
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+/* -----logo----- */
+.logo {
+font-family: var(--font-family-logo);
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: 1.33;
+
+color: var(--primary-brand-txt-cl);
+}
+
+.light-theme-logo {
+    color: var(--dark-txt-cl);
+}
+
+.dark-theme-logo {
+    color: var(--light-txt-cl);
+}
+
+.footer {
+    background-color: var(--dark-bg-cl);
 }
