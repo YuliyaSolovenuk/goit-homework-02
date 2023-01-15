@@ -1,91 +1,275 @@
 :root {
+  /* Font */
+  --font-family-logo: 'Raleway', 'sans-serif';
+  --font-family-main: 'Roboto', 'sans-serif';
+  --font-weight-heading: 700;
+  /* Text colors */
+  --primary-brand-txt-cl: #4d5ae5;
+  --body-txt-cl: #434455;
+  --dark-txt-cl: #2e2f42;
+  --light-txt-cl: #f4f4fd;
+  --white-txt-cl: #ffffff;
 
-/* Font */
---font-family-logo: 'Raleway', 'sans-serif';
-/* Text colors */
---primary-brand-txt-cl: #4D5AE5;
---body-txt-cl: #434455;
---dark-txt-cl: #2E2F42;
---light-txt-cl: #F4F4FD;
---white-txt-cl: #FFFFFF;
+  /* Background colors */
+  --dark-bg-cl: #2e2f42;
+  --light-bg-cl: #f4f4fd;
+  --primary-brand-btn-bg-cl: #4d5ae5;
+  --accent-bg-cl: #e7e9fc;
+  --white-bg-cl: #ffffff;
 
-/* Background colors */
---dark-bg-cl: #2E2F42;
---light-bg-cl:  #F4F4FD;
---primary-brand-btn-bg-cl: #4D5AE5;
-
-/* Others */
---light-btn-bg-color: #F4F4FD;
---pressed-btn-state-bg: #404BBF;
---active-link-txt: #404BBF;
+  /* Others */
+  --light-btn-bg-color: #f4f4fd;
+  --pressed-btn-state-bg: #404bbf;
+  --active-link-txt: #404bbf;
 }
 
+/* -------------------------- */
+/* -----------body----------- */
+/* -------------------------- */
 
 body {
-font-family: 'Roboto', 'sans-serif'; 
+  font-family: var(--font-family-main);
 
-color: var(--body-txt-cl);
+  color: var(--body-txt-cl);
+
+  background-color: var(--white-bg-cl);
 }
 
-/* ----- buttons ----- */
+/* -------------------------- */
+/* ---------buttons---------- */
+/* -------------------------- */
 .btn:hover,
 .btn:focus {
-    color: var(--white-txt-cl);
-  background-color: var(--pressed-btn-state-bg) ;
+  color: var(--white-txt-cl);
+  background-color: var(--pressed-btn-state-bg);
 }
 
 .btn {
-    cursor: pointer;
+  cursor: pointer;
 
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
+  font-family: var(--font-family-main);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+
+  letter-spacing: 0.04em;
 }
 
 .hero-btn {
-color: var(--white-txt-cl);
-background-color: var(--primary-brand-btn-bg-cl);
+  color: var(--white-txt-cl);
+  background-color: var(--primary-brand-btn-bg-cl);
 }
 
 .portfolio-btn {
-color: var(--primary-brand-txt-cl);
-background-color: var(--light-btn-bg-color);
+  color: var(--primary-brand-txt-cl);
+  background-color: var(--light-btn-bg-color);
 }
 
-/* !!!!!  .current */
-
+/* -------------------------- */
+/* -----------link----------- */
+/* -------------------------- */
 .link:hover,
 .link:focus {
-color: var(--active-link-txt);
+  color: var(--active-link-txt);
+}
+
+.header-nav .link.current {
+  color: var(--active-link-txt);
 }
 
 .link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .list {
-    list-style: none;
+  list-style: none;
 }
 
-/* -----logo----- */
-.logo {
-font-family: var(--font-family-logo);
-font-style: normal;
-font-weight: 800;
-font-size: 18px;
-line-height: 1.33;
+/* -------------------------- */
+/* --------title (h2)-------- */
+/* -------------------------- */
 
-color: var(--primary-brand-txt-cl);
+.section-title {
+  font-style: normal;
+  font-weight: var(--font-weight-heading);
+  font-size: 36px;
+  line-height: 1.11;
+
+  letter-spacing: 0.02em;
+
+  color: var(--dark-txt-cl);
+}
+
+/* -------------------------- */
+/* -----------logo----------- */
+/* -------------------------- */
+.logo {
+  font-family: var(--font-family-logo);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+
+  color: var(--primary-brand-txt-cl);
 }
 
 .light-theme-logo {
-    color: var(--dark-txt-cl);
+  color: var(--dark-txt-cl);
 }
 
 .dark-theme-logo {
-    color: var(--light-txt-cl);
+  color: var(--light-txt-cl);
+}
+
+/* -------------------------- */
+/* -------nav-section-------- */
+/* -------------------------- */
+
+.nav-item {
+  font-family: var(--font-family-main);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  color: var(--dark-txt-cl);
+}
+
+.nav-contacts {
+  color: var(--body-txt-cl);
+}
+
+.header {
+  background-color: var(--white-bg-cl);
+}
+
+/* -------------------------- */
+/* -------section-hero------- */
+/* -------------------------- */
+.hero-title {
+  font-family: inherit;
+  font-style: normal;
+  font-size: 56px;
+  line-height: 1.07;
+
+  letter-spacing: 0.02em;
+
+  color: var(--white-txt-cl);
+}
+
+.hero {
+  background-color: var(--dark-bg-cl);
+}
+
+/* -------------------------- */
+/* -----section-benefits----- */
+/* -------------------------- */
+
+.benefits-subtitle {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+
+  letter-spacing: 0.02em;
+
+  color: var(--dark-txt-cl);
+}
+
+.benefits-descr {
+  font-size: 16px;
+  line-height: 1.5;
+
+  letter-spacing: 0.02em;
+
+  color: currentColor;
+}
+
+/* ----------------------------- */
+/* -section "What are we doing"- */
+/* ----------------------------- */
+
+/* ----------------------------- */
+/* -----section "Our Team"------ */
+/* ----------------------------- */
+
+.team-member {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+
+  letter-spacing: 0.02em;
+
+  color: var(--dark-txt-cl);
+}
+
+.team-descr {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+
+  letter-spacing: 0.02em;
+
+  color: currentColor;
+}
+
+.our-team {
+  background-color: var(--light-bg-cl);
+}
+/* -------------------------- */
+/* ---------footer----------- */
+/* -------------------------- */
+.logo-subtext {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+
+  letter-spacing: 0.02em;
+
+  color: #d9d9d9;
 }
 
 .footer {
-    background-color: var(--dark-bg-cl);
+  background-color: var(--dark-bg-cl);
+}
+/* !!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* -------------------------- */
+/* -------Portfolio---------- */
+/* -------------------------- */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* -------------------------- */
+/* ----section Filters------- */
+/* -------------------------- */
+
+.portfolio-text {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+
+  letter-spacing: 0.02em;
+
+  color: var(--dark-txt-cl);
+}
+
+.portfolio-text {
+  font-family: inherit;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+
+  letter-spacing: 0.02em;
+
+  color: currentColor;
 }
