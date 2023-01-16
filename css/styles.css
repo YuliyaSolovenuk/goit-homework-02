@@ -1,7 +1,7 @@
 :root {
   /* Font */
-  --font-family-logo: 'Raleway', 'sans-serif';
-  --font-family-main: 'Roboto', 'sans-serif';
+  --font-family-logo: 'Raleway', 'Montserrat', 'sans-serif';
+  --font-family-main: 'Roboto', 'Open Sans', 'sans-serif';
   --font-weight-heading: 700;
   /* Text colors */
   --primary-brand-txt-cl: #4d5ae5;
@@ -48,7 +48,6 @@ body {
   cursor: pointer;
 
   font-family: var(--font-family-main);
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -91,8 +90,6 @@ body {
 /* -------------------------- */
 
 .section-title {
-  font-style: normal;
-  font-weight: var(--font-weight-heading);
   font-size: 36px;
   line-height: 1.11;
 
@@ -106,7 +103,6 @@ body {
 /* -------------------------- */
 .logo {
   font-family: var(--font-family-logo);
-  font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
@@ -127,8 +123,6 @@ body {
 /* -------------------------- */
 
 .nav-item {
-  font-family: var(--font-family-main);
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -138,7 +132,7 @@ body {
 }
 
 .nav-contacts {
-  color: var(--body-txt-cl);
+  color: inherit;
 }
 
 .header {
@@ -149,8 +143,6 @@ body {
 /* -------section-hero------- */
 /* -------------------------- */
 .hero-title {
-  font-family: inherit;
-  font-style: normal;
   font-size: 56px;
   line-height: 1.07;
 
@@ -168,8 +160,6 @@ body {
 /* -------------------------- */
 
 .benefits-subtitle {
-  font-family: inherit;
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -184,8 +174,6 @@ body {
   line-height: 1.5;
 
   letter-spacing: 0.02em;
-
-  color: currentColor;
 }
 
 /* ----------------------------- */
@@ -197,8 +185,6 @@ body {
 /* ----------------------------- */
 
 .team-member {
-  font-family: inherit;
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -209,15 +195,10 @@ body {
 }
 
 .team-descr {
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
 
   letter-spacing: 0.02em;
-
-  color: currentColor;
 }
 
 .our-team {
@@ -227,9 +208,7 @@ body {
 /* ---------footer----------- */
 /* -------------------------- */
 .logo-subtext {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
+  font-family: var(--font-family-main);
   font-size: 16px;
   line-height: 1.5;
 
@@ -251,9 +230,7 @@ body {
 /* ----section Filters------- */
 /* -------------------------- */
 
-.portfolio-text {
-  font-family: inherit;
-  font-style: normal;
+.portfolio-subtitle {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -264,12 +241,8 @@ body {
 }
 
 .portfolio-text {
-  font-family: inherit;
-  font-style: normal;
   font-size: 16px;
   line-height: 1.5;
 
   letter-spacing: 0.02em;
-
-  color: currentColor;
 }
